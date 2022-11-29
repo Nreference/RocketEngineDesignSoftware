@@ -1,4 +1,5 @@
 import tkinter
+from tkinter import ttk
 import pyautogui
 
 if __name__ == '__main__':
@@ -14,5 +15,7 @@ if __name__ == '__main__':
 
     # set the position of the window to the center of the screen
     window.geometry("800x500+{}+{}".format(center_x,center_y))
+    window.resizable(False,False)
+    window.attributes('-topmost', 1)
 
     window.mainloop()
